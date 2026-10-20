@@ -1,0 +1,110 @@
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+   ========================================== */
+.certificados-section {
+    padding: 5rem 5%;
+    background-color: #0b0f19;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.certificados-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* ==========================================
+   GRID
+   ========================================== */
+.certificados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* ==========================================
+   TARJETA DE CERTIFICADO
+   ========================================== */
+.certificado-card {
+    background-color: #111a2e;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificado-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 216, 255, 0.3);
+}
+
+.certificado-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.certificado-icon {
+    font-size: 2rem;
+}
+
+.certificado-fecha {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #00d8ff;
+    background-color: rgba(0, 216, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 216, 255, 0.2);
+}
+
+.certificado-titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.certificado-institucion {
+    color: #6ee7b7;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.certificado-desc {
+    color: #8b95a1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.certificado-footer {
+    margin-top: auto;
+}
+
+.btn-certificado {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00d8ff;
+    border: 1px solid #00d8ff;
+    background-color: rgba(0, 216, 255, 0.05);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-certificado:hover {
+    background-color: rgba(0, 216, 255, 0.2);
+    transform: translateY(-2px);
+}
